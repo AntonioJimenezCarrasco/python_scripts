@@ -1,4 +1,6 @@
 #!/bin/python3
+#Keep in mind that it does not prevent you from using IPs that do not exist, or pure jibberish
+#Originally taken from TCM PEH Course, modified version
 
 import sys
 import socket
@@ -38,6 +40,3 @@ except socket.gaierror:
 except socket.error:
 	print("Couldn't connect to the server.")
 	sys.exit()
-	
-#It does not prevent you from using IPs that do not exist
-#TCM PEH Course, modified version
